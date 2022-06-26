@@ -10,6 +10,9 @@
 body{
   font-family: "Poppins",sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 *{
   padding: 0;
   margin: 0;
@@ -260,4 +263,82 @@ section.hobby .card-wrapper .card .card-content p{
 section.hobby .card-wrapper .card .card-content a.read-more{
   color: #0000FF;
 
+}
+section.contact .card-wrapper .card img{
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+section.contact .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 3rem;
+}
+section.contact .card-wrapper .card{
+  text-align: center;
+}
+section.contact .card-wrapper .card h2{
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h5{
+  font-size: 1rem;
+  color: var(--ternary);
+}
+section.contact .input-wrap{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  margin-bottom: 1rem;
+}
+section.contact .input-wrap-2{
+  display: flex;
+  flex-direction: column;
+}
+section.contact input{
+  padding: 0.7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--light);
+}
+section.contact .input-wrap-2 input{
+  margin-top: 1rem;
+  border: 1px solid var(--light);
+}
+section.contact .input-wrap-2 textarea{
+  padding: 0.5rem;
+  border: 1px solid var(--light);
+  font-size: 1rem;
+}
+section.contact .input-wrap-2 textarea:focus{
+  outline: none;
+}
+section.contact input:focus{
+  outline: none;
+}
+section.contact .btn-wrapper{
+  text-align: center;
+  margin-top: 2rem;
+
+}
+footer{
+  background: var(--dark);
+  text-align: center;
+  padding: 5rem 0;
+}
+footer .footer-social img{
+  width: 2%;
+  height: 10%;
+  object-fit: cover;
+}
+footer .footer-social a{
+  margin-right: 1rem;
+}
+footer .footer-social{
+  margin-bottom: 1.2rem;
+  margin-right: -1rem;
+}
+footer .Copyright{
+  color: var(--ternary);
 }
